@@ -23,16 +23,19 @@ caminho_busca = '/html[1]/body[1]/div[2]/header[1]/div[1]/div[1]/div[1]/div[1]/d
 
 navegador.find_element(by=By.XPATH,value = caminho_busca).click()
 time.sleep(0.5)
-#escrevendo palavra na busca
+
+navegador.find_element(by=By.XPATH, value='//*[@id="root"]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/span').click()
+time.sleep(0.5)
 
 #navegador.find_elements_by_xpath('/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/input[1]').send_keys("eleição")
 pesquisa_eleicao = navegador.find_element(by=By.XPATH,value='/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/input[1]')
 pesquisa_eleicao.send_keys('eleição')
 time.sleep(5)
 
-navegador.find_element(by=By.XPATH, value='//*[@id="root"]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/span').click()
-time.sleep(0.5)
+
 
 navegador.find_element(by=By.XPATH, value='//*[@id="root"]/div[2]/div/div/div[2]/div/div[7]/div[2]/div[2]/button').click()
 time.sleep(3)
 
+
+#filtrando informações
