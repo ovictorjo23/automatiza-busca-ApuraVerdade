@@ -1,0 +1,1 @@
+# automatiza-busca-ApuraVerdade
